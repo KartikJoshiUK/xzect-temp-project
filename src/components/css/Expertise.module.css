@@ -1,0 +1,42 @@
+.expertise {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.expertise h2 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.expertise > p {
+  color: gray;
+}
+.tagsLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+.button {
+  padding: 1rem;
+  width: 296px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff5f08;
+  border: 1px solid #ff5f08;
+  background-color: white;
+  transition: all 0.3s ease-out;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.button:hover {
+  background-color: #ff5f08;
+  color: white;
+}

@@ -1,0 +1,17 @@
+.solution {
+  background-color: #1e222e;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.solution h2 {
+  font-size: 2rem;
+}
+.cardsLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+}

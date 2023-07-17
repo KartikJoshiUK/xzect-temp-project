@@ -1,0 +1,55 @@
+.scene {
+  perspective: 2000px;
+  perspective-origin: 50% -460px;
+}
+.cube {
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotateY(45deg);
+  transform-origin: 50% 100px 0;
+  animation: rotate 20s linear infinite;
+  position: relative;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0);
+  }
+
+  20% {
+    transform: rotateY(1turn);
+  }
+  40% {
+    transform: rotateY(45deg) rotateX(-180deg);
+  }
+  60% {
+    transform: rotateY(45deg) rotateX(180deg);
+  }
+  80% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  border: 5px solid white;
+}
+.back {
+  transform: translateZ(-200px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(100px) translateY(-100px);
+}
+.bottom {
+  transform: rotateX(90deg) translateZ(-100px) translateY(-100px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(-100px) translateX(100px);
+}
+.left {
+  transform: rotateY(90deg) translateZ(100px) translateX(100px);
+}

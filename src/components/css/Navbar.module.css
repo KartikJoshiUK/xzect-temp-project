@@ -1,0 +1,118 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.41);
+  backdrop-filter: blur(4px);
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  min-height: 40px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.gradient {
+  position: absolute;
+  bottom: -2px;
+
+  height: 2px;
+  left: 0;
+  background-image: linear-gradient(100deg, #fb2576, #5e76fd 50%, #6df1af 110%);
+  width: 100%;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.hamOpen,
+.hamClose {
+  position: relative;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.ham1,
+.ham2,
+.ham3 {
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  border-radius: 5px;
+  left: 0;
+  transition: all 0.3s ease-out;
+}
+/* OPEN State */
+.hamOpen .ham1 {
+  top: 10%;
+}
+.hamOpen .ham2 {
+  top: 50%;
+  translate: 0% -50%;
+  width: 70%;
+}
+.hamOpen .ham3 {
+  bottom: 10%;
+}
+/* CLOSE State */
+.hamClose .ham1 {
+  top: 50%;
+  rotate: 45deg;
+  translate: 0% -50%;
+}
+.hamClose .ham2 {
+  top: 50%;
+  translate: 0% -50%;
+  width: 0%;
+}
+.hamClose .ham3 {
+  bottom: 50%;
+  rotate: -45deg;
+  translate: 0% 50%;
+}
+
+/* Sidebar */
+.sidebar {
+  overflow: hidden;
+  padding: calc(10vh + 1rem) 1rem 1rem 1rem;
+  background-color: #1d2233;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  transition: top 0.5s ease-out;
+  z-index: 999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.sidebarOpen {
+  top: 0%;
+}
+.sidebarClose {
+  top: -100%;
+}
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.linkContainer span {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.linkContainer a {
+  text-decoration: none;
+  color: #bfddf1;
+}
